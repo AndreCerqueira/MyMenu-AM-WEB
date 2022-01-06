@@ -1,20 +1,74 @@
 body {
     background-color: #fee2b3;
+    
 }
 
-header {
-    background-image:url('/images/xhero_bg.jpg.pagespeed.ic.08xBTGP0Gm.png');
-    background-size:100%;
+.bgHeader {
+
+    background-image: url('/images/bg_edited.png');
+    background-size: 100%;
     background-repeat: repeat-y;
     background-attachment: fixed;
-    height:1024px;
-    width:100%;
+    position: relative;
+    background-repeat: no-repeat;
+    display: block;
+    height: 100%;
+    width: 100%;
     text-align: center;
+    z-index: -1;
+}
 
+.opacity {
+    height: 100%;
+    width: 100%;
+    background: #000000;
+    opacity: 0.5;
+    position: relative;
+}
+
+.navBar {
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 5px;
+    width: 100%;
 
 }
-header a {
+
+.navBar a {
+    font-size: 20px;
     text-decoration: none;
+    color: lightgray;
+}
+
+.navBar a.active {
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+}
+
+.navBar a:hover {
+    text-decoration: none;
+    text-shadow: 2px white;
+}
+
+.navBar h1{
+    font-size: 100px;
+}
+
+.cardOpacity {
+    height: 50px;
+    width: 250px;
+    background: #000000;
+    opacity: 0.5;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    padding: 10px;
 }
 
 ul {
@@ -51,13 +105,13 @@ li a:hover:not(.active) {
 }
 
 .week-day-button {
-    
+
     width: 100px;
     text-align: center;
-	background-color:#f2c37d;
-	border-radius:15px;
-	border:none;
-	display:inline-block;
+    background-color: #f2c37d;
+    border-radius: 15px;
+    border: none;
+    display: inline-block;
 
     margin-left: 2%;
 
@@ -66,6 +120,6 @@ li a:hover:not(.active) {
     padding-top: 10px;
     padding-bottom: 10px;
 
-	color:#ffffff;
-	text-decoration:none;
+    color: #ffffff;
+    text-decoration: none;
 }
