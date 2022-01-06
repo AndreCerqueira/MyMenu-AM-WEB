@@ -3,14 +3,14 @@ body {
     
 }
 
-<<<<<<< HEAD
 header {
     background-image: url('/images/xhero_bg.jpg.pagespeed.ic.08xBTGP0Gm.png');
     background-size: 100%;
     background-repeat: repeat-y;
     background-attachment: fixed;
     height: 1024px;
-=======
+}
+
 .bgHeader {
 
     background-image: url('/images/bg_edited.png');
@@ -21,7 +21,6 @@ header {
     background-repeat: no-repeat;
     display: block;
     height: 100%;
->>>>>>> 21172adc99407aa9fc1a6e5620caada321d89045
     width: 100%;
     text-align: center;
     z-index: -1;
@@ -57,11 +56,7 @@ header {
     color: white;
 }
 
-<<<<<<< HEAD
-header a {
-=======
 .navBar a:hover {
->>>>>>> 21172adc99407aa9fc1a6e5620caada321d89045
     text-decoration: none;
     text-shadow: 2px white;
 }
@@ -162,7 +157,6 @@ li a:hover:not(.active) {
 
     color: #ffffff;
     text-decoration: none;
-<<<<<<< HEAD
 }
 
 .reservar-button {
@@ -215,6 +209,4 @@ li a:hover:not(.active) {
     border-radius: 15px;
     padding: 1%;
     background-color: rgb(231, 231, 231);
-=======
->>>>>>> 21172adc99407aa9fc1a6e5620caada321d89045
 }
