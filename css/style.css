@@ -7,7 +7,7 @@ body {
     Background ementa
 */
 .bgHeader {
-    background-image: url('/images/bg_edited.png');
+    background-image: url('../images/bg_edited.png');
     background-size: 100%;
     background-repeat: repeat-y;
     background-attachment: fixed;
@@ -25,7 +25,7 @@ body {
     Background prefil
 */
 .bgHeader2 {
-    background-image: url('/images/ESG-scaled1024.jpg');
+    background-image: url('../images/ESG-scaled1024.jpg');
     background-size: 100%;
     background-repeat: repeat-y;
     background-attachment: fixed;
@@ -217,7 +217,7 @@ li a:hover:not(.active) {
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 40%;
 }
 
 .modal-content h3 {
@@ -227,7 +227,7 @@ li a:hover:not(.active) {
 .modal-description {
     border-radius: 15px;
     padding: 1%;
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(245, 245, 245);
 }
 
 /*
