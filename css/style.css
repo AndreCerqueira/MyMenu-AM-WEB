@@ -3,16 +3,10 @@ body {
     
 }
 
-header {
-    background-image: url('/images/xhero_bg.jpg.pagespeed.ic.08xBTGP0Gm.png');
-    background-size: 100%;
-    background-repeat: repeat-y;
-    background-attachment: fixed;
-    height: 1024px;
-}
-
+/*
+    Background ementa
+*/
 .bgHeader {
-
     background-image: url('/images/bg_edited.png');
     background-size: 100%;
     background-repeat: repeat-y;
@@ -26,6 +20,27 @@ header {
     z-index: -1;
 }
 
+
+/*
+    Background prefil
+*/
+.bgHeader2 {
+    background-image: url('/images/ESG-scaled1024.jpg');
+    background-size: 100%;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    position: relative;
+    background-repeat: no-repeat;
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    z-index: -1;
+}
+
+/*
+    torna as imagens mais escuras
+*/
 .opacity {
     height: 100%;
     width: 100%;
@@ -34,6 +49,9 @@ header {
     position: relative;
 }
 
+/*
+    navegação
+*/
 .navBar {
     font-size: 20px;
     color: white;
@@ -78,6 +96,7 @@ header {
     color: white;
     padding: 10px;
 }
+
 
 .center {
     margin-top: 2%;
@@ -209,4 +228,44 @@ li a:hover:not(.active) {
     border-radius: 15px;
     padding: 1%;
     background-color: rgb(231, 231, 231);
+}
+
+/*
+    foto de prefil
+*/
+.prefil {
+    
+    position: absolute;
+    top: 70%;
+    left: 37%;
+    background-repeat: no-repeat;
+    display: block;
+    height: 500px;
+    width: 500px;
+    text-align: center;
+    z-index: -1;
+}
+
+.infoPrefil {
+    text-align: center;
+    margin-top: 250px;
+
+}
+
+.infoPrefil h1{
+    color: #FF5200;
+    font-family: 'Nunito';
+    text-shadow: 2px 2px 5px tomato;
+    font-size: 74px;
+
+}
+
+/*
+    footer da pagina
+*/
+footer {
+    height: 200px;
+    width: 100%;
+    background-color: #645F56;
+    
 }
