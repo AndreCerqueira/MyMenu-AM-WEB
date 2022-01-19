@@ -166,6 +166,8 @@ li a:hover:not(.active) {
     border-radius: 15px;
     border: none;
     display: inline-block;
+    
+    transition-duration: 0.4s;
 
     margin-left: 2%;
 
@@ -176,7 +178,21 @@ li a:hover:not(.active) {
 
     color: #ffffff;
     text-decoration: none;
+    outline:none;
 }
+
+.week-day-button:hover {
+    background-color: #d4ab6c;
+    border: none;
+    outline: none;
+}
+
+.week-day-button:focus {
+    background-color: #b8935c;
+    border: none;
+    outline:none;
+}
+
 
 .reservar-button {
 
@@ -195,7 +211,21 @@ li a:hover:not(.active) {
 
     color: #ffffff;
     text-decoration: none;
+    outline:none;
 }
+
+.reservar-button:hover {
+    background-color: #d4ab6c;
+    border: none;
+    outline: none;
+}
+
+.reservar-button:focus {
+    background-color: #b8935c;
+    border: none;
+    outline:none;
+}
+
 
 /* The Modal (background) */
 .modal {
@@ -233,39 +263,63 @@ li a:hover:not(.active) {
 /*
     foto de prefil
 */
-.prefil {
+.perfil {
     
-    position: absolute;
-    top: 70%;
-    left: 37%;
-    background-repeat: no-repeat;
-    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    justify-content: center;
+
     height: 500px;
     width: 500px;
-    text-align: center;
-    z-index: -1;
-}
-
-.infoPrefil {
-    text-align: center;
-    margin-top: 250px;
 
 }
 
-.infoPrefil h1{
+.perfil img {
+
+    margin-top: 5%;
+
+    border: 10px white solid;
+    border-radius: 500px; 
+    width: 400px; 
+    height: 400px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.infoPerfil {
+    text-align: center;
+}
+
+.infoPerfil h1{
     color: #FF5200;
-    font-family: 'Nunito';
     text-shadow: 2px 2px 5px tomato;
     font-size: 74px;
-
 }
 
 /*
     footer da pagina
 */
 footer {
-    height: 200px;
-    width: 100%;
-    background-color: #645F56;
-    
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #2c3e50;
+    color: #fff;
+  }
+
+/*
+    copyright section da pagina
+*/
+
+.copyright {
+    padding: 2%;
+    background-color: #1a252f;
+  }
+
+
+.checked {
+
+    color: rgb(255, 209, 79);
+
 }

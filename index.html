@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@100&display=swap" rel="stylesheet">
-
+    
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -29,18 +29,18 @@
 <body>
 
     <header style="height: 850px;">
-        <div class="bgHeader">
+        <div class="bgHeader2">
             <div class="opacity">
             </div>
         </div>
         <div class="navBar">
 
             <br>
-            <a href="index.html" class="active"> Ementa </a>
+            <a href="index.html" class="active"> Perfil </a>
             &#160&#160&#160&#160&#160&#160&#160
-            <a href="pages/profile.html"> Perfil </a>
+            <a href="pages/menu-seg-meat.html"> Ementa </a>
             <br><br><br><br><br><br><br><br><br><br><br>
-            <h1>A sua <br> Refeição</h1>
+            <h1>Olá <br> Como está hoje?</h1>
 
         </div>
         <div class="cardOpacity">
@@ -48,271 +48,68 @@
         </div>
     </header>
 
+    <div class="perfil">
+        <img src="images/nuno.png" alt="perfil">
+    </div>
 
-    <div class="container">
+    <div class="infoPerfil">
+        <h1>Nuno Fernandes</h1>
+        <h3>20116</h3>
+        <h3>Aplicações Móveis</h3>
+        <h4>Saldo: 24€</h4>
+    </div>
 
-        <div class="center">
-            <button class="week-day-button" type="button"> Segunda </button>
-            <button class="week-day-button" type="button"> Terça </button>
-            <button class="week-day-button" type="button"> Quarta </button>
-            <button class="week-day-button" type="button"> Quinta </button>
-            <button class="week-day-button" type="button"> Sexta </button>
-        </div>
+    <div class="center">
+        <button class="reservar-button" type="button"> Carregar Saldo </button>
+    </div>
 
-        <div class="row">
-            <div class="col">
+    <footer class="text-center">
 
-                <h4>Escolha a sua ementa</h4>
-                <h3>A sua ementa</h3>
+        <div class="container text-white" style="padding-top: 3%;">
 
-                <div class="menuTypeMenu">
-                    <ul>
-                        <li>
-                            <a class="active" href="#home">
-                                <img src="images/bife.png" width="50" height="50">
-                                Carne
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#home">
-                                <img src="images/peixe.png" width="50" height="50">
-                                Peixe
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#home">
-                                <img src="images/vegetables.png" width="50" height="50">
-                                Vegetariano
-                            </a>
-                        </li>
-                    </ul>
+            <div class="row">
+
+                <!-- Footer Location-->
+                <div class="col-4">
+                    <h4 class="text-uppercase"> Localização </h4>
+                    <p>
+                        Braga, Portugal
+                    </p>
                 </div>
-            </div>
 
-            <div class="col">
+                <!-- Footer Social Icons-->
+                <div class="col-4">
+                    <h4 class="text-uppercase"> Redes Sociais </h4>
+                    <a class="btn btn-outline-light btn-social" href="https://ipca.pt"><i
+                            class="fab fa-fw fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="https://ipca.pt"><i
+                            class="fab fa-fw fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social"
+                        href="https://ipca.pt"><i
+                            class="fab fa-fw fa-linkedin-in"></i></a>
+                </div>
 
-                <div class="menus">
-
-                    <div class="sopa">
-                        <h5> Sopa </h5>
-
-                        <div class="menu-item">
-                            <img src="images/carne-sopa-1.png" onclick="openModal('modal-sopa')">
-                            <h5> Sopa de massa </h5>
-
-                            <div class="rating">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="prato">
-                        <h5> Prato </h5>
-                        <div class="menu-item">
-                            <img src="images/carne-prato-1.png" onclick="openModal('modal-prato')">
-                            <h5> Bife de vaca </h5>
-
-                            <div class="rating">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="sobremesa">
-                        <h5> Sobremesa </h5>
-
-                        <div class="menu-item">
-                            <img src="images/sobremesa-1.jpg" onclick="openModal('modal-sobremesa')">
-                            <h5> Bolo de chocolate </h5>
-
-                            <div class="rating">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                            </div>
-                        </div>
-                    </div>
-
+                <!-- Footer About Text-->
+                <div class="col-4">
+                    <h4 class="text-uppercase">Contact me</h4>
+                    <p>
+                        a20115@alunos.ipca.pt <br>
+                        a20116@alunos.ipca.pt
+                    </p>
                 </div>
 
             </div>
 
         </div>
 
-            <div class="center">
-                <button class="reservar-button" type="button"> Reservar Senha </button>
-            </div>
-
-        </div>
-
-
-        <!-- The Modals -->
-        <div id="modal-sopa" class="modal">
-
-            <!-- Modal content -->
-            <div class="modal-content">
-
-                <!-- Title and Rating -->
-                <div class="row">
-
-                    <div class="col-9">
-                        <h3> Sopa de Massa. </h3>
-                    </div>
-
-                    <div class="col">
-
-                        <div class="rating" style="text-align: center;">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <p> Avalie esta receita </p>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <!-- Video -->
-                <p align="center">
-                    <iframe width="80%" height="300px" src="https://www.youtube.com/embed/QcMuqxLlbmM"
-                        title="YouTube video player" frameborder="0" allow="accelerometer; 
-                        autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                    </iframe>
-                </p>
-
-                <!-- Description -->
-                <p class="modal-description">
-                    Um bom bolo de chocolate fofinho aquece o coraçãozinho, né? Quer deixar essa receita ainda mais
-                    deliciosa
-                    e chocolatuda? Adicione na massa chocolate meio amargo derretido em banho-maria! O sabor vai ficar
-                    ainda
-                    mais intenso e incrível, não vai dar vontade de parar de comer!
-                    Peneirar ingredientes, na hora de fazer a massa, ajuda com que ela fique ainda mais linda e cresça.
-                </p>
-
-            </div>
-
-
-        </div>
-
-        <div id="modal-prato" class="modal">
-
-            <!-- Modal content -->
-            <div class="modal-content">
-
-                <!-- Title and Rating -->
-                <div class="row">
-
-                    <div class="col-9">
-                        <h3> Bife de vaca. </h3>
-                    </div>
-
-                    <div class="col">
-
-                        <div class="rating" style="text-align: center;">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <p> Avalie esta receita </p>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <!-- Video -->
-                <p align="center">
-                    <iframe width="80%" height="300px" src="https://www.youtube.com/embed/2W3UJdGB-Jw"
-                        title="YouTube video player" frameborder="0" allow="accelerometer; 
-                        autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                    </iframe>
-                </p>
-
-                <!-- Description -->
-                <p class="modal-description">
-                    Um bom bolo de chocolate fofinho aquece o coraçãozinho, né? Quer deixar essa receita ainda mais
-                    deliciosa
-                    e chocolatuda? Adicione na massa chocolate meio amargo derretido em banho-maria! O sabor vai ficar
-                    ainda
-                    mais intenso e incrível, não vai dar vontade de parar de comer!
-                    Peneirar ingredientes, na hora de fazer a massa, ajuda com que ela fique ainda mais linda e cresça.
-                </p>
-
-            </div>
-
-
-        </div>
-
-        <div id="modal-sobremesa" class="modal">
-
-            <!-- Modal content -->
-            <div class="modal-content">
-
-                <!-- Title and Rating -->
-                <div class="row">
-
-                    <div class="col-9">
-                        <h3> A melhor receita de bolo de chocolate. </h3>
-                    </div>
-
-                    <div class="col">
-
-                        <div class="rating" style="text-align: center;">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <p> Avalie esta receita </p>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <!-- Video -->
-                <p align="center">
-                    <iframe width="80%" height="300px" src="https://www.youtube.com/embed/RHOD5wABW6o"
-                        title="YouTube video player" frameborder="0" allow="accelerometer; 
-                        autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                    </iframe>
-                </p>
-
-                <!-- Description -->
-                <p class="modal-description">
-                    Um bom bolo de chocolate fofinho aquece o coraçãozinho, né? Quer deixar essa receita ainda mais
-                    deliciosa
-                    e chocolatuda? Adicione na massa chocolate meio amargo derretido em banho-maria! O sabor vai ficar
-                    ainda
-                    mais intenso e incrível, não vai dar vontade de parar de comer!
-                    Peneirar ingredientes, na hora de fazer a massa, ajuda com que ela fique ainda mais linda e cresça.
-                </p>
-
-            </div>
-
-        </div>
-
-        <!-- Scripts -->
-        <script src="js/scripts.js"></script>
+    </footer>
+    
+    <!-- Copyright Section-->
+    <div class="copyright text-center text-white">
+        <div class="container"><small>Copyright &copy; André Cerqueira & Nuno Fernandes 2021</small></div>
+    </div>
 
 </body>
 
-<footer>
 
-</footer>
 </html>

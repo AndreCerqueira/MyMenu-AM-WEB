@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>A sua refeição</title>
+
+    <!-- font nunito 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@100&display=swap" rel="stylesheet">
+-->
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+
+    <header style="height: 850px;">
+        <div class="bgHeader">
+            <div class="opacity">
+            </div>
+        </div>
+        <div class="navBar">
+
+            <br>
+            <a href="../index.html"> Perfil </a>
+            &#160&#160&#160&#160&#160&#160&#160
+            <a href="menu-seg-meat.html" class="active"> Ementa </a>
+            <br><br><br><br><br><br><br><br><br><br><br>
+            <h1>A sua <br> Refeição</h1>
+
+        </div>
+        <div class="cardOpacity">
+            <span>Nuno Fernandes</span> <span>24 €</span>
+        </div>
+    </header>
+
+
+    <div class="container">
+
+        <div class="center">
+            <button class="week-day-button" type="button"> Segunda </button>
+            <button class="week-day-button" type="button"> Terça </button>
+            <button class="week-day-button" type="button"> Quarta </button>
+            <button class="week-day-button" type="button"> Quinta </button>
+            <button class="week-day-button" type="button"> Sexta </button>
+        </div>
+
+        <div class="row">
+            <div class="col">
+
+                <h4>Escolha a sua ementa</h4>
+                <h3>A sua ementa</h3>
+
+                <div class="menuTypeMenu">
+                    <ul>
+                        <li>
+                            <a class="active" href="menu-seg-meat.html">
+                                <img src="../images/bife.png" width="50" height="50">
+                                Carne
+                            </a>
+                        </li>
+                        <li>
+                            <a href="menu-seg-fish.html">
+                                <img src="../images/peixe.png" width="50" height="50">
+                                Peixe
+                            </a>
+                        </li>
+                        <li>
+                            <a href="menu-seg-veg.html">
+                                <img src="../images/vegetables.png" width="50" height="50">
+                                Vegetariano
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col">
+
+                <div class="menus">
+
+                    <div class="sopa">
+                        <h5> Sopa </h5>
+
+                        <div class="menu-item">
+                            <img src="../images/carne-sopa-1.png" onclick="openModal('modal-sopa')">
+                            <h5> Sopa de massa </h5>
+
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="prato">
+                        <h5> Prato </h5>
+                        <div class="menu-item">
+                            <img src="../images/carne-prato-1.png" onclick="openModal('modal-prato')">
+                            <h5> Bife de vaca </h5>
+
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sobremesa">
+                        <h5> Sobremesa </h5>
+
+                        <div class="menu-item">
+                            <img src="../images/sobremesa-1.jpg" onclick="openModal('modal-sobremesa')">
+                            <h5> Bolo de chocolate </h5>
+
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+            <div class="center">
+                <button class="reservar-button" type="button"> Reservar Senha </button>
+            </div>
+
+        </div>
+
+
+        <!-- The Modals -->
+        <div id="modal-sopa" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+
+                <!-- Title and Rating -->
+                <div class="row">
+
+                    <div class="col-9">
+                        <h3> Sopa de Massa. </h3>
+                    </div>
+
+                    <div class="col">
+
+                        <div class="rating" style="text-align: center;">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <p> Avaliação da receita </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Video -->
+                <p align="center">
+                    <iframe width="80%" height="300px" src="https://www.youtube.com/embed/QcMuqxLlbmM"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; 
+                        autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </p>
+
+                <!-- Description -->
+                <p class="modal-description">
+                    Um bom bolo de chocolate fofinho aquece o coraçãozinho, né? Quer deixar essa receita ainda mais
+                    deliciosa
+                    e chocolatuda? Adicione na massa chocolate meio amargo derretido em banho-maria!
+                </p>
+
+            </div>
+
+
+        </div>
+
+        <div id="modal-prato" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+
+                <!-- Title and Rating -->
+                <div class="row">
+
+                    <div class="col-9">
+                        <h3> Bife de vaca. </h3>
+                    </div>
+
+                    <div class="col">
+
+                        <div class="rating" style="text-align: center;">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <p> Avaliação da receita </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Video -->
+                <p align="center">
+                    <iframe width="80%" height="300px" src="https://www.youtube.com/embed/2W3UJdGB-Jw"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; 
+                        autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </p>
+
+                <!-- Description -->
+                <p class="modal-description">
+                    Um bom bolo de chocolate fofinho aquece o coraçãozinho, né? Quer deixar essa receita ainda mais
+                    deliciosa
+                    e chocolatuda? Adicione na massa chocolate meio amargo derretido em banho-maria!
+                </p>
+
+            </div>
+
+
+        </div>
+
+        <div id="modal-sobremesa" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+
+                <!-- Title and Rating -->
+                <div class="row">
+
+                    <div class="col-9">
+                        <h3> A melhor receita de bolo de chocolate. </h3>
+                    </div>
+
+                    <div class="col">
+
+                        <div class="rating" style="text-align: center;">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <p> Avaliação da receita </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Video -->
+                <p align="center">
+                    <iframe width="80%" height="300px" src="https://www.youtube.com/embed/RHOD5wABW6o"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; 
+                        autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </p>
+
+                <!-- Description -->
+                <p class="modal-description">                    
+                    Um bom bolo de chocolate fofinho aquece o coraçãozinho, né? Quer deixar essa receita ainda mais
+                    deliciosa
+                    e chocolatuda? Adicione na massa chocolate meio amargo derretido em banho-maria!
+                </p>
+
+            </div>
+
+        </div>
+
+        <footer class="text-center">
+
+            <div class="container text-white" style="padding-top: 3%;">
+
+                <div class="row">
+
+                    <!-- Footer Location-->
+                    <div class="col-4">
+                        <h4 class="text-uppercase"> Localização </h4>
+                        <p>
+                            Braga, Portugal
+                        </p>
+                    </div>
+
+                    <!-- Footer Social Icons-->
+                    <div class="col-4">
+                        <h4 class="text-uppercase"> Redes Sociais </h4>
+                        <a class="btn btn-outline-light btn-social" href="https://ipca.pt"><i
+                                class="fab fa-fw fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://ipca.pt"><i
+                                class="fab fa-fw fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social"
+                            href="https://ipca.pt"><i
+                                class="fab fa-fw fa-linkedin-in"></i></a>
+                    </div>
+
+                    <!-- Footer About Text-->
+                    <div class="col-4">
+                        <h4 class="text-uppercase">Contact me</h4>
+                        <p>
+                            a20115@alunos.ipca.pt <br>
+                            a20116@alunos.ipca.pt
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </footer>
+        
+        <!-- Copyright Section-->
+        <div class="copyright text-center text-white">
+            <div class="container"><small>Copyright &copy; André Cerqueira & Nuno Fernandes 2021</small></div>
+        </div>
+        
+        <!-- Scripts -->
+        <script src="../js/scripts.js"></script>
+
+</body>
+
+
+</html>
